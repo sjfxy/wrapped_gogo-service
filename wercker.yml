@@ -16,7 +16,7 @@ build:
           go version
           go get -u github.com/cloudnativego/cf-tools/vcapinate
           export PATH=$WERCKER_SOURCE_DIR/bin:$PATH
-          go mod download
+          go mod vendor
 
     # Build the project
     - script:
