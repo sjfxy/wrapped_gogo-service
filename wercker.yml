@@ -6,7 +6,7 @@ services:
 build:
 
   steps:
-    - setup-go-workspace
+    - setup-go-workspace:
         package-dir: github.com/cloudnativego/gogo-service
 
     - script:
