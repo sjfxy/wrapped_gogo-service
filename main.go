@@ -13,6 +13,8 @@ func main() {
 		port = "3000"
 	}
 	appEnv, err := cfenv.Current()
+	//fmt.Println(err)
+
 	if err != nil {
 		fmt.Println("CF Environment not detected.")
 	}
