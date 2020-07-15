@@ -16,8 +16,9 @@ func NewServer(appEnv *cfenv.App) *negroni.Negroni {
 		IndentJSON: true,
 	})
 	//配置 formatter 依赖注入即可 格式化 json xml yaml 格式化容器
-	n := negroni.Classic() //NginxController
-	mx := mux.NewRouter()  //路由容器 http.NewMux ->gin.handler echo.handl;er iris.Handler
+	//n := negroni.Classic() //NginxController
+	n := negroni.New()
+	mx := mux.NewRouter() //路由容器 http.NewMux ->gin.handler echo.handl;er iris.Handler
 
 	repo := initRepository(appEnv) //对应的初始化对应的仓库 返回对应的DbRepose inmeoriReopose fackrRopose
 
