@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/cloudfoundry-community/go-cfenv"
-	. "github.com/cloudnativego/gogo-service/service"
 	"net/http"
 	"net/http/httptest"
+	. "sin.com/gogo-service/service"
 	"testing"
 )
 

@@ -17,7 +17,8 @@ build:
           go get -u github.com/Masterminds/glide
           go get -u github.com/cloudnativego/cf-tools/vcapinate
           export PATH=$WERCKER_SOURCE_DIR/bin:$PATH
-          glide install
+          go mod init sin.com/gogo-service
+          go mod vendor
 
     # Build the project
     - script:
