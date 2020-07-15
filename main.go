@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"github.com/cloudfoundry-community/go-cfenv"
+	"github.com/cloudnativego/gogo-service/service"
 	"os"
-	"sin.com/gogo-service/service"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package service
 import (
 	"github.com/cloudnativego/cfmgo"
 	"github.com/cloudnativego/gogo-engine"
-	"sin.com/gogo-service/fakes"
+	"github.com/cloudnativego/gogo-service/fakes"
 	"testing"
 )
 
