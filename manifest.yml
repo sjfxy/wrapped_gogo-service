@@ -2,7 +2,7 @@ applications:
 - path: .
   memory: 512MB
   instances: 1
-  name: gogo-service
+  name: sin-service
   disk_quota: 1024M
   command: gogo-service
   buildpack: https://github.com/cloudfoundry/go-buildpack.git

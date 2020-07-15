@@ -7,7 +7,7 @@ import (
 	"github.com/cloudfoundry-community/go-cfenv"
 	"net/http"
 	"net/http/httptest"
-	. "sin.com/gogo-service/service"
+	. "github.com/cloudnativego/gogo-service"
 	"testing"
 )
 
