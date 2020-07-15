@@ -13,12 +13,10 @@ build:
         code: |
           cd $WERCKER_SOURCE_DIR
           go version
-#          go get -u github.com/Masterminds/glide
           go get -u github.com/cloudnativego/cf-tools/vcapinate
           export PATH=$WERCKER_SOURCE_DIR/bin:$PATH
           go mod download
           go mod vendor
-#          glide install
 
     # Build the project
     - script:
